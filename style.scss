@@ -3,46 +3,45 @@
 *::after {
   box-sizing: border-box;
 }
+
 .navBar {
   display: flex;
   background-color: #640fc5;
-  border-bottom: 1px solid white;
-  font-size: 1.5rem;
+  border-bottom: 1px solid #f4f4f4;
+  font-size: 0.9rem;
   margin: auto;
   padding-inline: 5%;
   padding-block: 1.5%;
-  align-items: center;
-  position: fixed;
+  align-items: baseline;
   width: 100%;
   overflow: hidden;
-  z-index: 3;
 }
 .logoSass {
   cursor: pointer;
 }
 .logoSass img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
 }
 .navMenu li {
   display: inline-block;
   margin-left: 25px;
-  font-size: 1.5rem;
   cursor: pointer;
 }
 .navMenu li a {
-  color: white;
+  color: #f4f4f4;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: bold;
 }
-
 .header {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   background-color: #640fc5;
   justify-content: space-between;
   padding-left: 5%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #f4f4f4;
 }
 .mainHeader {
   display: flex;
@@ -51,24 +50,40 @@
 }
 .mainHeader h1 {
   font-size: 6rem;
-  color: black;
+  color: #f4f4f4;
 }
 .mainHeader h3 {
   padding-block: 2rem;
   font-size: 1.5rem;
-  color: #191919;
+  color: #f4f4f4;
 }
-.mainHeader button {
-  margin: 1%;
-  padding: 1%;
-  background-color: #191919;
-  border-radius: 20px;
-  font-size: 1.5rem;
+.btn1 {
+  background-color: #0e6cff;
   color: white;
-  cursor: pointer;
-  width: 40%;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  width: 45%;
+  margin: 0.5%;
 }
-// .imgAnimation img{
-//     max-width: 300px;
-//     max-height: 300px;
-// }
+
+.btn2 {
+  @extend .btn1;
+  background-color: #ff8700;
+}
+.btn3 {
+  @extend .btn1;
+  background-color: #4caf50;
+}
+
+.imgBox {
+  padding-right: 5px;
+  border: 2px solid #640fc5;
+  padding-right: 5%;
+  padding-top: 2rem;
+}
+.imgBox img {
+  width: 100%;
+  border-radius: 20px;
+  height: 700px;
+  overflow: hidden;
+}
