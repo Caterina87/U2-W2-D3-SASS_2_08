@@ -66,6 +66,7 @@
   margin: 0.5%;
   opacity: 0.6;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn1:hover {
@@ -92,4 +93,20 @@
   border-radius: 20px;
   height: 700px;
   overflow: hidden;
+}
+
+.griglia {
+  display: flex;
+  background-color: #f4f4f4;
+  width: 100%;
+  margin-top: 2%;
+}
+.griglia div {
+  margin: 3px;
+}
+
+.griglia div img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
 }
