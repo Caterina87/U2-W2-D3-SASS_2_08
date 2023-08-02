@@ -73,6 +73,12 @@
   border-radius: 5px;
   width: 45%;
   margin: 0.5%;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn1:hover, .btn3:hover, .btn2:hover {
+  opacity: 1;
 }
 
 .btn2 {
